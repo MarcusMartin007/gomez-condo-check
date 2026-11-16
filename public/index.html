@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pinellas Condo Building Check | Carolyn Gomez, REALTOR®</title>
+  <meta name="description" content="Send me the building name. Within one business day I'll tell you what that Pinellas condo building should have on file and what to ask for." />
+  <!-- LAUNCH: remove this robots line once Carolyn approves the page -->
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://gomezgroup-condocheck.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pinellas Condo Building Check with Carolyn Gomez" />
+  <meta property="og:description" content="Thinking about a condo? Send me the building name. A note back within one business day." />
+  <meta property="og:url" content="https://gomezgroup-condocheck.netlify.app/" />
+  <meta property="og:image" content="https://gomezgroup-condocheck.netlify.app/img/share.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="img/mark.png" />
+  <link rel="preload" href="fonts/cardo-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/cardo-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <style>
+    @font-face { font-family: "Cardo"; src: url("fonts/cardo-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+    @font-face { font-family: "Cardo"; src: url("fonts/cardo-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+    @font-face { font-family: "Cardo"; src: url("fonts/cardo-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+    @font-face { font-family: "Inter"; src: url("fonts/inter-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+    @font-face { font-family: "Inter"; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+    /* Gulf-side Nautical. Field dominance: Sand field, Storm Navy ink. */
+    :root { --navy: #284055; --navy-dk: #1E3244; --brass: #B89B68; --sand: #E5DAC4; --paper: #EFE8DA; --oyster: #D9D1C2; --copper: #A8693D; --muted: #55606B; --white: #FBF8F2; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--sand); color: var(--navy); font: 400 18px/1.6 "Cardo", Georgia, "Times New Roman", serif; -webkit-font-smoothing: antialiased; }
+    a { color: var(--navy); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .label { font: 600 0.74rem/1.2 "Inter", "Helvetica Neue", Arial, sans-serif; letter-spacing: 0.16em; text-transform: uppercase; }
+    .eyebrow { font: 700 0.9rem/1.2 "Cardo", Georgia, serif; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); margin: 0 0 16px; }
+    .rule { width: 64px; height: 3px; background: var(--copper); border: 0; margin: 26px 0 22px; }
+
+    /* Header */
+    .top { border-bottom: 1px solid var(--oyster); background: var(--sand); }
+    .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+    .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--navy); }
+    .brand img { width: 50px; height: 50px; }
+    .brand b { display: block; font-size: 1.12rem; letter-spacing: 0.06em; font-weight: 700; }
+    .brand small { display: block; font-size: 0.86rem; color: var(--muted); }
+    .call { font: 600 0.9rem "Inter", Arial, sans-serif; text-decoration: none; white-space: nowrap; }
+    .call span { color: var(--muted); font-weight: 500; }
+
+    /* Hero */
+    .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; grid-template-areas: "intro form" "gets form"; grid-template-rows: auto 1fr; column-gap: 56px; row-gap: 34px; padding-top: 52px; padding-bottom: 76px; align-items: start; }
+    .intro { grid-area: intro; }
+    .gets { grid-area: gets; }
+    .formcard { grid-area: form; }
+    h1 { font-size: clamp(2.15rem, 4.4vw, 3.3rem); line-height: 1.06; letter-spacing: -0.01em; font-weight: 700; margin: 0; text-wrap: balance; }
+    .line { font-style: italic; font-size: 1.5rem; line-height: 1.35; margin: 0 0 18px; max-width: 30ch; }
+    .lede { font-size: 1.1rem; max-width: 48ch; margin: 0; }
+    .gets ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; max-width: 540px; counter-reset: g; }
+    .gets li { counter-increment: g; display: grid; grid-template-columns: 44px 1fr; gap: 4px 12px; background: var(--paper); border-left: 3px solid var(--copper); border-radius: 3px; padding: 14px 18px 14px 14px; }
+    .gets li::before { content: counter(g); grid-row: span 2; font: 600 1.35rem/1.1 "Inter", Arial, sans-serif; color: var(--copper); text-align: center; padding-top: 2px; }
+    .gets b { display: block; font-size: 1.08rem; }
+    .gets span { color: var(--muted); font-size: 1rem; line-height: 1.5; }
+    .law { margin: 20px 0 0; max-width: 540px; font-size: 0.98rem; color: var(--muted); }
+    .law small { display: block; margin-top: 6px; font-size: 0.82rem; }
+
+    /* Form */
+    .formcard { background: var(--white); border: 1px solid var(--oyster); border-top: 4px solid var(--navy); border-radius: 4px; padding: 28px 28px 24px; box-shadow: 0 12px 32px rgba(40, 64, 85, 0.10); }
+    .formcard h2 { font-size: 1.55rem; line-height: 1.2; margin: 0 0 4px; }
+    .formcard .sub { color: var(--muted); font-size: 0.98rem; margin: 0 0 18px; }
+    .f { margin-bottom: 16px; }
+    .f > label, .f legend { display: block; font: 600 0.84rem/1.3 "Inter", Arial, sans-serif; margin-bottom: 7px; padding: 0; }
+    .f label i, .f legend i { font-style: normal; font-weight: 500; color: var(--muted); }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+    input[type=text], input[type=email], input[type=tel], textarea { width: 100%; font: 400 1.02rem "Cardo", Georgia, serif; color: var(--navy); background: #fff; border: 1px solid #A39C8C; border-radius: 4px; padding: 11px 12px; }
+    textarea { min-height: 84px; resize: vertical; }
+    input:focus, textarea:focus { outline: 3px solid rgba(40, 64, 85, 0.30); border-color: var(--navy); outline-offset: 0; }
+    ::placeholder { color: #857F72; }
+    fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { position: relative; }
+    .chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .chip span { display: inline-block; border: 1px solid #A39C8C; border-radius: 999px; padding: 7px 15px; font: 500 0.86rem "Inter", Arial, sans-serif; background: #fff; cursor: pointer; transition: background 0.12s, color 0.12s; }
+    .chip input:checked + span { background: var(--navy); border-color: var(--navy); color: var(--white); }
+    .chip input:focus-visible + span { outline: 3px solid var(--navy); outline-offset: 2px; }
+    .owner-only[hidden] { display: none; }
+    .check { display: flex; gap: 10px; align-items: flex-start; font-size: 0.98rem; margin: 4px 0 18px; }
+    .check input { width: 18px; height: 18px; margin: 4px 0 0; accent-color: var(--navy); flex: none; }
+    .send { width: 100%; border: 0; border-radius: 4px; background: var(--navy); color: var(--white); font: 600 0.86rem "Inter", Arial, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; padding: 17px; cursor: pointer; }
+    .send:hover { background: var(--navy-dk); }
+    .send[disabled] { opacity: 0.7; cursor: wait; }
+    .fine { font-size: 0.86rem; color: var(--muted); margin: 14px 0 0; line-height: 1.5; }
+    .err { color: #8E2A1F; font: 600 0.86rem "Inter", Arial, sans-serif; margin: 10px 0 0; }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .thanks { padding: 8px 0; }
+    .thanks h2 { margin-bottom: 10px; }
+    .thanks p { margin: 0 0 12px; }
+    .thanks .sig { font-style: italic; font-size: 1.9rem; margin: 6px 0 0; }
+
+    /* About: navy band, brass accents */
+    .about { background: var(--navy); color: var(--sand); }
+    .about .wrap { display: grid; grid-template-columns: 320px 1fr; gap: 56px; align-items: center; padding-top: 64px; padding-bottom: 64px; }
+    .about .photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; border-radius: 160px 160px 4px 4px; }
+    .about .eyebrow { color: var(--brass); }
+    .about h2 { font-size: 2rem; margin: 0 0 14px; line-height: 1.15; }
+    .about p { margin: 0 0 16px; max-width: 58ch; }
+    .about .rule { background: var(--brass); }
+    .about .tag { font-style: italic; font-size: 1.45rem; line-height: 1.3; margin: 0 0 18px; }
+    .about a { color: var(--sand); font-weight: 700; }
+
+    footer { background: var(--navy-dk); color: var(--sand); font-size: 0.9rem; }
+    footer .wrap { padding-top: 22px; padding-bottom: 26px; display: grid; gap: 6px; }
+    footer a { color: inherit; }
+    footer .dim { opacity: 0.78; }
+
+    @media (max-width: 880px) {
+      .hero { grid-template-columns: 1fr; grid-template-areas: "intro" "form" "gets"; grid-template-rows: auto; padding-top: 34px; padding-bottom: 48px; row-gap: 30px; }
+      .about .wrap { grid-template-columns: 1fr; gap: 32px; padding-top: 48px; padding-bottom: 48px; }
+      .about .photo { max-width: 280px; }
+    }
+    @media (max-width: 520px) {
+      .wrap { padding: 0 18px; }
+      .brand small, .call span { display: none; }
+      .brand img { width: 42px; height: 42px; }
+      .line { font-size: 1.3rem; }
+      .formcard { padding: 22px 18px 20px; }
+      .two { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <img src="img/mark.png" alt="" width="50" height="50" />
+        <div><b>The Gomez Group</b><small>Carolyn Gomez, REALTOR® · RE/MAX Action First</small></div>
+      </a>
+      <a class="call" href="tel:+17273463314"><span>Call or text </span>727-346-3314</a>
+    </div>
+  </header>
+
+  <main class="wrap hero">
+    <div class="intro">
+      <p class="eyebrow">Pinellas condo building check</p>
+      <h1>Thinking about a condo? Send me the building name.</h1>
+      <hr class="rule" />
+      <p class="line">Within one business day, I'll tell you what that building should have on file and what to ask for.</p>
+      <p class="lede">With a Florida condo, the paperwork tells you more than the view. Whether you're about to make an offer or getting ready to list, I'll look at the building and send you a short note on its records and the questions worth asking.</p>
+    </div>
+
+    <section class="gets" aria-labelledby="gets-h">
+      <h2 class="eyebrow" id="gets-h">What my note covers</h2>
+      <ol>
+        <li><b>What it should have on file</b><span>Whether the building needs a milestone inspection and a structural integrity reserve study, based on its height and age.</span></li>
+        <li><b>What's already on record</b><span>What I can find about the building, so you're not starting from zero.</span></li>
+        <li><b>What to ask for</b><span>The five documents to request, and the red flags to read for once you have them.</span></li>
+        <li><b>If you own there</b><span>What buyers will ask for when you list, and what to have ready.</span></li>
+      </ol>
+      <p class="law">Florida requires a structural integrity reserve study for condo buildings three or more stories, and a milestone inspection once the building turns 30 (25 where the local building department requires it).<small>Source: Fla. Stat. 553.899 and 718.112. Checked Nov. 16, 2026.</small></p>
+    </section>
+
+    <section class="formcard" aria-labelledby="form-h">
+      <div id="ask">
+        <h2 id="form-h">Request your building check</h2>
+        <p class="sub">Takes about a minute.</p>
+        <form name="condo-check" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="company" id="cc">
+          <input type="hidden" name="form-name" value="condo-check" />
+          <input type="hidden" name="subject" value="Condo building check request" />
+          <input type="hidden" name="source" value="Direct" />
+          <input type="hidden" name="src_raw" value="" />
+          <input type="hidden" name="page" value="condo-building-check" />
+          <input type="hidden" name="submitted_at" value="" />
+          <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off" /></label></p>
+
+          <fieldset class="f">
+            <legend>I'm...</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="role" value="Looking at a condo" checked /><span>Looking at a condo</span></label>
+              <label class="chip"><input type="radio" name="role" value="I own a condo" /><span>I own a condo</span></label>
+            </div>
+          </fieldset>
+
+          <div class="f"><label for="building">Building name</label><input type="text" id="building" name="building" placeholder="Building or association name" required /></div>
+          <div class="two">
+            <div class="f"><label for="city">City</label><input type="text" id="city" name="city" autocomplete="address-level2" placeholder="Treasure Island" required /></div>
+            <div class="f owner-only" id="unit-f" hidden><label for="unit">Unit <i>(optional)</i></label><input type="text" id="unit" name="unit" /></div>
+          </div>
+
+          <fieldset class="f">
+            <legend>Timeline <i>(optional)</i></legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="timeline" value="Just looking" /><span>Just looking</span></label>
+              <label class="chip"><input type="radio" name="timeline" value="Within 3 months" /><span>Within 3 months</span></label>
+              <label class="chip"><input type="radio" name="timeline" value="3 to 12 months" /><span>3 to 12 months</span></label>
+              <label class="chip"><input type="radio" name="timeline" value="A year or more" /><span>A year or more</span></label>
+            </div>
+          </fieldset>
+
+          <div class="f"><label for="notes">Anything I should know? <i>(optional)</i></label><textarea id="notes" name="notes" placeholder="A listing you're watching, an assessment you heard about, a question for the board"></textarea></div>
+
+          <div class="f"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required /></div>
+          <div class="two">
+            <div class="f"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required /></div>
+            <div class="f"><label for="phone">Phone <i>(optional)</i></label><input type="tel" id="phone" name="phone" autocomplete="tel" /></div>
+          </div>
+
+          <fieldset class="f">
+            <legend>Send my note by</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="reply_by" value="Email" checked /><span>Email</span></label>
+              <label class="chip"><input type="radio" name="reply_by" value="Text" /><span>Text</span></label>
+              <label class="chip"><input type="radio" name="reply_by" value="Phone call" /><span>Phone call</span></label>
+            </div>
+          </fieldset>
+
+          <label class="check"><input type="checkbox" name="condo_notes" value="Yes" /><span>Also send me your occasional Pinellas condo notes.</span></label>
+
+          <button class="send" type="submit">Send me my building check</button>
+          <p class="err" id="err" role="alert" hidden>That didn't go through. Please try again, or call or text me at 727-346-3314.</p>
+          <p class="fine">General guidance from a licensed REALTOR®, not legal, inspection or engineering advice. I use your details to send your note and follow up the way you choose, and I never sell them.</p>
+        </form>
+      </div>
+      <div class="thanks" id="thanks" hidden tabindex="-1">
+        <h2>Got it, thank you</h2>
+        <p>Your building check is on its way within one business day.</p>
+        <p>Want to talk sooner? Call or text me at <a href="tel:+17273463314">727-346-3314</a>.</p>
+        <p class="sig">Carolyn</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="photo"><img src="img/carolyn.jpg" alt="Carolyn Gomez smiling" width="720" height="900" loading="lazy" /></div>
+      <div>
+        <p class="eyebrow">Who's writing your note</p>
+        <h2 id="about-h">Carolyn Gomez</h2>
+        <p>I lead The Gomez Group with RE/MAX Action First, serving buyers and sellers across Pinellas County and Tampa Bay. I came to the Gulf Coast from Gig Harbor, Washington, in 2005, and my business runs on three words: God, Family, Real Estate.</p>
+        <hr class="rule" />
+        <p class="tag">Your Trusted Advisor for Gulf Coast Living.</p>
+        <p><a href="https://carolynsellsstpete.com" rel="noopener">CarolynSellsStPete.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span><strong>Carolyn Gomez</strong>, REALTOR® · RE/MAX Action First · The Gomez Group · <a href="tel:+17273463314">727-346-3314</a> · <a href="https://carolynsellsstpete.com">CarolynSellsStPete.com</a></span>
+      <span class="dim">Each office independently owned and operated. Equal Housing Opportunity.</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var f = document.getElementById("cc");
+      if (!f) return;
+
+      // Unit field shows only for owners.
+      var unit = document.getElementById("unit-f");
+      Array.prototype.forEach.call(f.elements.role, function (r) {
+        r.addEventListener("change", function () { unit.hidden = f.elements.role.value !== "I own a condo"; });
+      });
+
+      if (!window.fetch || !window.URLSearchParams) return;
+
+      // Where the visitor came from: ?src= (or utm_source), else the referring site, else Direct.
+      var MAP = { instagram: "Instagram", ig: "Instagram", facebook: "Facebook", fb: "Facebook", google: "Google", gbp: "Google", email: "Email", newsletter: "Email", referral: "Referral agent", agent: "Referral agent", qr: "Print QR", print: "Print QR", flyer: "Print QR", partner: "Partner" };
+      var q = new URLSearchParams(location.search);
+      var raw = (q.get("src") || q.get("utm_source") || "").toLowerCase().trim();
+      var src = MAP[raw] || "";
+      if (!src && raw) src = raw.charAt(0).toUpperCase() + raw.slice(1);
+      if (!src) {
+        var r = (document.referrer || "").toLowerCase();
+        if (/instagram\./.test(r)) src = "Instagram";
+        else if (/facebook\.|fb\.com|m\.me/.test(r)) src = "Facebook";
+        else if (/google\./.test(r)) src = "Google";
+        else src = "Direct";
+      }
+      f.elements.source.value = src;
+      f.elements.src_raw.value = raw || (document.referrer ? "referrer: " + document.referrer.split("?")[0] : "");
+
+      var btn = f.querySelector(".send"), err = document.getElementById("err");
+      f.addEventListener("submit", function (e) {
+        if (!f.checkValidity()) return;
+        e.preventDefault();
+        if (f.elements.role.value !== "I own a condo") f.elements.unit.value = "";
+        f.elements.submitted_at.value = new Date().toISOString();
+        btn.disabled = true; btn.textContent = "Sending"; err.hidden = true;
+        fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(f)).toString() })
+          .then(function (res) {
+            if (!res.ok) throw new Error(res.status);
+            document.getElementById("ask").hidden = true;
+            var t = document.getElementById("thanks"); t.hidden = false; t.focus();
+          })
+          .catch(function () { btn.disabled = false; btn.textContent = "Send me my building check"; err.hidden = false; });
+      });
+    })();
+  </script>
+</body>
+</html>
